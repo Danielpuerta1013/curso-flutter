@@ -66,7 +66,15 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDk5Uw37oDY2BEjHRmiRpfwl5daXWwQzNpA&s',width: 150,)
             ],
-          )
+          ),
+          Container(
+              color: Colors.blue,
+              height: 100,
+              width: MediaQuery.of(context).size.width/1.2,
+
+              child: const Text(
+                'TEXTO CUALQUIERA',
+                style: TextStyle(color: Colors.red, fontSize: 60, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),textAlign: TextAlign.left, overflow: TextOverflow.visible,))
         ],
       ),
     ),
